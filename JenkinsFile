@@ -3,7 +3,7 @@ node()
 {
 	stage('Checkout the source code')
 	{
-		checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/MonishaManjappa/trail_jpetstore.git']]])
+		git clone 'https://github.com/MonishaManjappa/trail_jpetstore.git/'
 	}
 
 	
