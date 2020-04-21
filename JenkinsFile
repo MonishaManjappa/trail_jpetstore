@@ -1,0 +1,19 @@
+
+node()
+{
+	stage('Git')
+	{
+		echo "Checkout from Github"
+	}
+
+	
+	stage('Build')
+	{
+		echo "Building war"
+		sh 'mvn clean compile install'
+	}
+	
+}
+
+
+
