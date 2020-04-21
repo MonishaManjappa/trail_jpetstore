@@ -3,7 +3,7 @@ node()
 {
 	stage('Checkout the source code')
 	{
-		git clone 'https://github.com/MonishaManjappa/trail_jpetstore.git/'
+		git clone "https://github.com/MonishaManjappa/trail_jpetstore.git/"
 	}
 
 	
